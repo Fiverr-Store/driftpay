@@ -1,0 +1,201 @@
+/*--------------------------------------------------------------
+# base
+--------------------------------------------------------------*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+  font-weight: 400;
+	font-style: normal;
+	color: $text-color;
+	line-height: 1.6;
+  position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px) {
+	.wow {
+		-webkit-animation-name: none !important;
+		animation-name: none !important;
+		visibility: visible !important;
+	}
+}
+
+a {
+	&:hover {
+		color: $primary-color;
+	}
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+// i,
+// span,
+// a {
+//   display: inline-block;
+// }
+
+audio,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: $text-color;
+  font-weight: 700;
+}
+p {
+	margin: 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+.section{
+  overflow: hidden;
+}
+.scroll-top {
+	width: 35px;
+	height: 35px;
+	background-color: $primary-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 7px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 9;
+	cursor: pointer;
+
+	transition: all 0.3s ease-out 0s;
+	display: none;
+	img {
+		height: 18px;
+		transform: scaleY(-1);
+		fill: $bg-white;
+	}
+	&:focus,
+	&:hover {
+		color: #fff;
+		transform: translateY(-4px);
+		box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.5);
+	}
+}
+
+
+
+/*--------------------------------------------------------------
+  ##  Page Loader
+  --------------------------------------------------------------*/
+  .page-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    background-color: $bg-black;
+  }
+
+  .lds-grid {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $primary-color;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }

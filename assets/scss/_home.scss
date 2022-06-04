@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# mockup
+--------------------------------------------------------------*/
+
+.mockup {
+	padding: 70px 0px;
+	@media only screen and (max-width: 767px) {
+		padding: 50px 0px;
+	}
+	@media only screen and (max-width: 482px) {
+		padding: 35px 0px;
+	}
+	.mock-text {
+		h2 {
+			font-size: 47px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 38px;
+				margin-bottom: 16px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 35px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 28px;
+				margin-bottom: 10px;
+			}
+		}
+		p {
+			font-size: 16px;
+			font-weight: 500;
+		}
+		h3 {
+			font-size: 32px;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 25px;
+				margin-bottom: 12px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.point-box {
+		.flex-ro {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid rgba($bg-black, 0.28);
+			padding: 14px 0px;
+			@media only screen and (max-width: 767px) {
+				padding: 12px 0px;
+			}
+			h5 {
+				font-size: 21px;
+				@media only screen and (max-width: 1199px) {
+					font-size: 19px;
+				}
+				@media only screen and (max-width: 767px) {
+					font-size: 18px;
+				}
+			}
+			p {
+				font-size: 18px;
+				font-weight: 600;
+				color: #ff2c2c;
+				&.success {
+					color: #19f094;
+				}
+				@media only screen and (max-width: 767px) {
+					font-size: 16px;
+				}
+			}
+		}
+		.info {
+			font-size: 13px;
+			line-height: 1.5;
+			color: #000000;
+			opacity: 0.4;
+			margin-top: 8px;
+		}
+	}
+}
