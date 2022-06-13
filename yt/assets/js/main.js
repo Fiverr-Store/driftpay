@@ -52,7 +52,7 @@
 
 
   jQuery('[data-vbg]').youtube_background({
-    'mobile': true
+    'mobile': true,
   });
 
 })();
