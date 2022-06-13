@@ -168,7 +168,7 @@ header {
   padding: 6px 30px;
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 45px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all 0.2s ease-in;
@@ -178,9 +178,15 @@ header {
   background-color: #FFFFFF;
   color: #000000;
 }
+@media only screen and (max-width: 991px) {
+  .btn-connect {
+    right: 25px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .btn-connect {
     padding: 6px 24px;
+    right: 15px;
   }
 }
 
