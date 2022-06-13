@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# site-logo
+--------------------------------------------------------------*/
+
+.site-logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  .logo{
+    height: 160px;
+    opacity: .6;
+    @media only screen and (max-width: 767px) {
+     height: 140px;
+    }
+  }
+}
