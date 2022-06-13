@@ -95,6 +95,11 @@ header {
   position: relative;
   z-index: 9999;
 }
+@media only screen and (max-width: 767px) {
+  .top-con {
+    padding: 19px 0px;
+  }
+}
 
 .top-bar {
   display: -webkit-box;
@@ -140,7 +145,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .top-bar .box h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .top-bar .box h1 {
@@ -149,7 +154,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .top-bar .box h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -172,6 +177,11 @@ header {
 .btn-connect:hover {
   background-color: #FFFFFF;
   color: #000000;
+}
+@media only screen and (max-width: 767px) {
+  .btn-connect {
+    padding: 6px 24px;
+  }
 }
 
 /*--------------------------------------------------------------

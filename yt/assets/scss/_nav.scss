@@ -9,6 +9,9 @@ header{
 	background-color: $bg-black;
 	position: relative;
 	z-index: 9999;
+  @media only screen and (max-width: 767px) {
+   padding: 19px 0px;
+  }
 
 }
 .top-bar {
@@ -37,14 +40,14 @@ header{
 			color: #fff;
 			font-size: 19px;
 			@media only screen and (max-width: 767px) {
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 		h1 {
 			color: #fff;
 			font-size: 19px;
 			@media only screen and (max-width: 767px) {
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -66,5 +69,8 @@ header{
   &:hover{
     background-color: $bg-white;
     color: $bg-black;
+  }
+  @media only screen and (max-width: 767px) {
+   padding: 6px 24px;
   }
 }
