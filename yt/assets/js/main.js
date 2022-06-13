@@ -51,6 +51,8 @@
 
 
 
-  jQuery('[data-vbg]').youtube_background();
+  jQuery('[data-vbg]').youtube_background({
+    'mobile': true
+  });
 
 })();
