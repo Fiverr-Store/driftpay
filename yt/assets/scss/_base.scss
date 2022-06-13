@@ -4,7 +4,7 @@
 
 
 body {
-
+  font-family: "Minecraft Regular";
 	font-size: 16px;
 	font-style: normal;
 	color: $text-color;
@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+  font-family: "Minecraft Regular Bold";
 	margin: 0;
 	color: $title-color;
 }

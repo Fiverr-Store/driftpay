@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Minecraft Regular";
+  src: url("../fonts/MinecraftRegular-Bmg3.otf");
+}
+@font-face {
+  font-family: "Minecraft Regular Bold";
+  src: url("../fonts/MinecraftBold-nMK1.otf");
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # base
 --------------------------------------------------------------*/
 body {
+  font-family: "Minecraft Regular";
   font-size: 16px;
   font-style: normal;
   color: #4f5158;
@@ -46,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-family: "Minecraft Regular Bold";
   margin: 0;
   color: #0c1636;
 }
