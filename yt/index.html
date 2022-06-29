@@ -47,7 +47,7 @@
         this.words = words;
         this.txt = '';
         this.wordIndex = 0;
-        this.wait = parseInt(wait, 10000);
+        this.wait = parseInt(wait, 10);
         this.type();
         this.isDeleting = false;
       }
@@ -61,7 +61,7 @@
         // Check if deleting
         if (this.isDeleting) {
           // Remove char
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          // this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
           // Add char
           this.txt = fullTxt.substring(0, this.txt.length + 1);
@@ -72,7 +72,7 @@
           }<span class="blinking-cursor"></span></span>`;
 
         // Initial type Speed
-        let typeSpeed = 150;
+        let typeSpeed = 120;
 
         if (this.isDeleting) {
           typeSpeed /= 2;
