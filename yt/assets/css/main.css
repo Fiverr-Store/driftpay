@@ -19,12 +19,6 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   background-color: #000000;
-  background-image: url("../img/bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh;
 }
 
 * {
@@ -90,8 +84,25 @@ iframe {
 }
 
 /*--------------------------------------------------------------
-# site-logo
+# body-bg
 --------------------------------------------------------------*/
+.body-bg {
+  width: 100%;
+  height: 100%;
+}
+.body-bg .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /*--------------------------------------------------------------
 # top-text
 --------------------------------------------------------------*/
