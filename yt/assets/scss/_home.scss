@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# top-text
+--------------------------------------------------------------*/
+
+.top-text{
+  padding-top: 40px;
+  text-align: center;
+  h1{
+    font-size: 27px;
+    span{
+      line-height: 1.2;
+      color: $bg-white;
+    }
+    @media only screen and (max-width: 1199px) {
+     font-size: 25px;
+    }
+    @media only screen and (max-width: 767px) {
+     font-size: 20px;
+    }
+  }
+}

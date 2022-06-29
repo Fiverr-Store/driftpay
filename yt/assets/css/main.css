@@ -227,3 +227,28 @@ header {
   min-width: 100%;
   min-height: 100%;
 }
+
+/*--------------------------------------------------------------
+# top-text
+--------------------------------------------------------------*/
+.top-text {
+  padding-top: 40px;
+  text-align: center;
+}
+.top-text h1 {
+  font-size: 27px;
+}
+.top-text h1 span {
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 1199px) {
+  .top-text h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-text h1 {
+    font-size: 20px;
+  }
+}

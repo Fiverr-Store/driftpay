@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title> James NFT Club  </title>
+  <title> James NFT Club </title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
@@ -29,26 +29,26 @@
         <div class="top-bar">
 
           <div class="box">
-              <h1 id="days">0</h1>
-              <h3 id="daystxt">D :</h2>
+            <h1 id="days">0</h1>
+            <h3 id="daystxt">D :</h2>
           </div>
 
           <div class="box">
-              <h1 id="hours">0</h1>
-              <h3 id="hourstxt">H :</h2>
+            <h1 id="hours">0</h1>
+            <h3 id="hourstxt">H :</h2>
           </div>
           <div class="box">
-              <h1 id="minutes">0</h1>
-              <h3 id="minutestxt">M :</h2>
+            <h1 id="minutes">0</h1>
+            <h3 id="minutestxt">M :</h2>
           </div>
           <div class="box">
-              <h1 id="seconds">0</h1>
-              <h3 id="secondstxt">S</h2>
+            <h1 id="seconds">0</h1>
+            <h3 id="secondstxt">S</h2>
           </div>
         </div>
         <!--.top bar-->
 
-        <a href="#" class="btn-connect" > Connect </a>
+        <a href="#" class="btn-connect"> Connect </a>
 
       </div><!-- /.container-->
     </div><!-- /.top-con -->
@@ -57,20 +57,97 @@
   </header>
   <!-- ======= herder end ======= -->
 
+  <section class="top-text">
+    <h1>
+      <span class="txt-type" data-wait="3000" data-words='["This is just the beginning…"]'></span>
+    </h1>
+  </section><!-- /.top-text -->
+
   <div class="site-logo">
     <img src="assets/img/logo/logo.png" class="logo" alt="">
   </div><!-- /.site-logo -->
 
 
 
-<section class="body-bg">
-  <video class="video" autoplay loop muted playsinline preload="auto">
-    <source src="assets/img/v-bg.mp4" type="video/mp4">
-  </video>
-</section><!-- /.body-bg -->
+  <section class="body-bg">
+    <video class="video" autoplay loop muted playsinline preload="auto">
+      <source src="assets/img/v-bg.mp4" type="video/mp4">
+    </video>
+  </section><!-- /.body-bg -->
 
 
   <script src="assets/js/main.js"></script>
+
+  <script>
+    //===== text-blink
+
+    class TypeWritter {
+      constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 5);
+        this.type();
+        this.isDeleting = false;
+      }
+
+      // Type Method
+      type() {
+        // Current index of word
+        const current = this.wordIndex % this.words.length;
+        // Get full text of current word
+        const fullTxt = this.words[current];
+        // Check if deleting
+        if (this.isDeleting) {
+          // Remove char
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          // Add char
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        //Insert txt into element
+        this.txtElement.innerHTML = `<span class="txt">${this.txt
+          }<span class="blinking-cursor">|</span></span>`;
+
+        // Initial type Speed
+        let typeSpeed = 150;
+
+        if (this.isDeleting) {
+          typeSpeed /= 2;
+        }
+
+        // If word is complete
+        if (!this.isDeleting && this.txt === fullTxt) {
+          // Make pause at end
+          typeSpeed = this.wait;
+          // Set delete to true
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          // Move to next word
+          this.wordIndex++;
+          // Pause before start typing
+          typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Init on DOM  Load
+    document.addEventListener('DOMContentLoaded', init);
+
+    // Init App
+    function init() {
+      const txtElement = document.querySelector('.txt-type');
+      const words = JSON.parse(txtElement.getAttribute('data-words'));
+      const wait = txtElement.getAttribute('data-wait');
+      // Init TypeWritter
+      new TypeWritter(txtElement, words, wait);
+    }
+  </script>
 
 
 </body>
