@@ -22,40 +22,7 @@
     <![endif]-->
 
 
-  <header class="header">
-    <div class="top-con">
-      <div class="container-fluid">
 
-        <div class="top-bar">
-
-          <div class="box">
-            <h1 id="days">0</h1>
-            <h3 id="daystxt">D :</h2>
-          </div>
-
-          <div class="box">
-            <h1 id="hours">0</h1>
-            <h3 id="hourstxt">H :</h2>
-          </div>
-          <div class="box">
-            <h1 id="minutes">0</h1>
-            <h3 id="minutestxt">M :</h2>
-          </div>
-          <div class="box">
-            <h1 id="seconds">0</h1>
-            <h3 id="secondstxt">S</h2>
-          </div>
-        </div>
-        <!--.top bar-->
-
-        <a href="#" class="btn-connect"> Connect </a>
-
-      </div><!-- /.container-->
-    </div><!-- /.top-con -->
-
-
-  </header>
-  <!-- ======= herder end ======= -->
 
   <section class="top-text">
     <h1>
@@ -63,17 +30,9 @@
     </h1>
   </section><!-- /.top-text -->
 
-  <div class="site-logo">
-    <img src="assets/img/logo/logo.png" class="logo" alt="">
-  </div><!-- /.site-logo -->
 
 
 
-  <section class="body-bg">
-    <video class="video" autoplay loop muted playsinline preload="auto">
-      <source src="assets/img/v-bg.mp4" type="video/mp4">
-    </video>
-  </section><!-- /.body-bg -->
 
 
   <script src="assets/js/main.js"></script>
@@ -109,7 +68,7 @@
 
         //Insert txt into element
         this.txtElement.innerHTML = `<span class="txt">${this.txt
-          }<span class="blinking-cursor">!</span></span>`;
+          }<span class="blinking-cursor"></span></span>`;
 
         // Initial type Speed
         let typeSpeed = 150;
