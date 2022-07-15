@@ -331,19 +331,19 @@ h6 a {
 }
 @media only screen and (max-width: 1199px) {
   .hero-area .hero-text p {
-    font-size: 46px;
+    font-size: 35px;
     line-height: 0.8;
   }
 }
 @media only screen and (max-width: 991px) {
   .hero-area .hero-text p {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 0.7;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-area .hero-text p {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -358,26 +358,37 @@ h6 a {
     padding: 40px 0px;
   }
 }
-.free-min .mint-s h3 {
+@media only screen and (max-width: 767px) {
+  .free-min {
+    padding: 20px 0px;
+  }
+}
+.free-min h3 {
   font-size: 34px;
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 1199px) {
-  .free-min .mint-s h3 {
+  .free-min h3 {
     font-size: 28px;
     line-height: 0.8;
   }
 }
 @media only screen and (max-width: 991px) {
-  .free-min .mint-s h3 {
+  .free-min h3 {
     line-height: 0.7;
     font-size: 28px;
     margin-bottom: 7px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .free-min .mint-s h3 {
+  .free-min h3 {
     font-size: 25px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .free-min h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
   }
 }
 .free-min .mint-box {
