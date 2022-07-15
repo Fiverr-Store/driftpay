@@ -12,7 +12,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=212" />
+  <link rel="stylesheet" href="assets/css/main.css?v=213" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -85,8 +85,8 @@
         <div class="col-lg-7">
           <div class="hero-text">
             <p>
-              The Catz are about to take over the world. 5555 catz coming to a block you love. 1000 free mints... after those are
-              gone each cat will be 0.0069 ETH each.
+              The Catz are about to take over the world. 5555 catz coming to a blockchain you love. 1000 free mints... after those
+              are gone each cat will be 0.0069 ETH each.
             </p>
           </div><!-- /.hero-text -->
         </div><!-- /.col-lg-6 -->
@@ -207,77 +207,77 @@
   </script>
 
 
-<script>
-  //===== text-blink
+  <script>
+    //===== text-blink
 
-  class TypeWritters {
-    constructor(txtElement, words, wait = 3000) {
-      this.txtElement = txtElement;
-      this.words = words;
-      this.txt = '';
-      this.wordIndex = 0;
-      this.wait = parseInt(wait, 13);
-      this.type();
-      this.isDeleting = false;
-    }
-
-    // Type Method
-    type() {
-      // Current index of word
-      const current = this.wordIndex % this.words.length;
-      // Get full text of current word
-      const fullTxt = this.words[current];
-      // Check if deleting
-      if (this.isDeleting) {
-        // Remove char
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        // Add char
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      //Insert txt into element
-      this.txtElement.innerHTML = `<span class="txt">${this.txt
-        }<span class="blinking-cursor"></span></span>`;
-
-      // Initial type Speed
-      let typeSpeed = 170;
-
-      if (this.isDeleting) {
-        typeSpeed /= 2;
-      }
-
-      // If word is complete
-      if (!this.isDeleting && this.txt === fullTxt) {
-        // Make pause at end
-        typeSpeed = this.wait;
-        // Set delete to true
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
+    class TypeWritters {
+      constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 13);
+        this.type();
         this.isDeleting = false;
-        // Move to next word
-        this.wordIndex++;
-        // Pause before start typing
-        typeSpeed = 500;
       }
 
-      setTimeout(() => this.type(), typeSpeed);
+      // Type Method
+      type() {
+        // Current index of word
+        const current = this.wordIndex % this.words.length;
+        // Get full text of current word
+        const fullTxt = this.words[current];
+        // Check if deleting
+        if (this.isDeleting) {
+          // Remove char
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          // Add char
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        //Insert txt into element
+        this.txtElement.innerHTML = `<span class="txt">${this.txt
+          }<span class="blinking-cursor"></span></span>`;
+
+        // Initial type Speed
+        let typeSpeed = 170;
+
+        if (this.isDeleting) {
+          typeSpeed /= 2;
+        }
+
+        // If word is complete
+        if (!this.isDeleting && this.txt === fullTxt) {
+          // Make pause at end
+          typeSpeed = this.wait;
+          // Set delete to true
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          // Move to next word
+          this.wordIndex++;
+          // Pause before start typing
+          typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
     }
-  }
 
-  // Init on DOM  Load
-  document.addEventListener('DOMContentLoaded', init);
+    // Init on DOM  Load
+    document.addEventListener('DOMContentLoaded', init);
 
-  // Init App
-  function init() {
-    const txtElement = document.querySelector('.txt-type-m');
-    const words = JSON.parse(txtElement.getAttribute('data-words-m'));
-    const wait = txtElement.getAttribute('data-wait-m');
-    // Init TypeWritter
-    new TypeWritters(txtElement, words, wait);
-  }
+    // Init App
+    function init() {
+      const txtElement = document.querySelector('.txt-type-m');
+      const words = JSON.parse(txtElement.getAttribute('data-words-m'));
+      const wait = txtElement.getAttribute('data-wait-m');
+      // Init TypeWritter
+      new TypeWritters(txtElement, words, wait);
+    }
 
-</script>
+  </script>
 
 </body>
 
