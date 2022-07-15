@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+.hero-area{
+  padding-top: 60px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 30px;
+  }
+.hero-text{
+  p{
+    font-size: 55px;
+    @media only screen and (max-width: 1199px) {
+     font-size: 46px;
+     line-height: .8;
+    }
+    @media only screen and (max-width: 991px) {
+      font-size: 40px;
+     line-height: 0.7;
+    }
+    @media only screen and (max-width: 767px) {
+     font-size: 35px;
+    }
+
+  }
+}
+}

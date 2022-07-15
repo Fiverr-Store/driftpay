@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+# free-min
+--------------------------------------------------------------*/
+
+.free-min{
+  padding: 60px 0px;
+  @media only screen and (max-width: 991px) {
+   padding: 40px 0px;
+  }
+  .mint-s{
+    height: 100%;
+    background-color: #fff;
+    @media only screen and (max-width: 991px) {
+     background-color: $main-color;
+     height: auto;
+    }
+    h3{
+      font-size: 43px;
+      background-color: $main-color;
+      @media only screen and (max-width: 1199px) {
+       font-size: 36px;
+       line-height: 0.8;
+      }
+      @media only screen and (max-width: 991px) {
+        line-height: 0.7;
+        font-size: 34px;
+        margin-bottom: 7px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 32px;
+      }
+    }
+  }
+  .mint-box{
+    background-color: #fff;
+    text-align: center;
+    @media only screen and (max-width: 991px) {
+     padding: 60px 20px;
+    }
+
+    h2{
+      color: $main-color;
+      font-family: var(--bs-font-sans-serif);
+      font-weight: 700;
+      font-size: 54px;
+      position: relative;
+      top: 150px;
+      @media only screen and (max-width: 991px) {
+       top: unset;
+       font-size: 40px;
+      }
+
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  padding: 30px 0px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 15px;
+   padding-bottom: 25px;
+  }
+  p{
+    font-size: 33px;
+    line-height: 0.7;
+    @media only screen and (max-width: 991px) {
+     font-size: 25px;
+    }
+    @media only screen and (max-width: 482px) {
+     font-size: 23px;
+    }
+  }
+}

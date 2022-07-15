@@ -84,6 +84,42 @@ iframe {
 }
 
 /*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+header {
+  text-align: end;
+  padding-top: 24px;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    text-align: center;
+    padding-top: 18px;
+  }
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  display: inline-block;
+}
+header li:not(:last-child) {
+  margin-right: 5px;
+}
+header a {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+header a img {
+  height: 30px;
+}
+header a:hover {
+  opacity: 0.5;
+}
+
+/*--------------------------------------------------------------
 # top-text
 --------------------------------------------------------------*/
 .top-text {
