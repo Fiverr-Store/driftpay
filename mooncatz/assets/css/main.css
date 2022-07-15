@@ -23,6 +23,10 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1050px;
+}
+
 a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
@@ -89,7 +93,7 @@ h6 a {
 # navbar
 --------------------------------------------------------------*/
 .navbar-area {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -97,6 +101,7 @@ h6 a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   background-color: #111111;
+  border-bottom: 1px solid #393939;
 }
 @media only screen and (max-width: 991px) {
   .navbar-area {
@@ -164,28 +169,28 @@ h6 a {
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
-    padding: 17px 0;
+    padding: 12px 0;
   }
 }
 @media (max-width: 767px) {
   .navbar {
-    padding: 17px 0;
+    padding: 12px 0;
   }
 }
 .navbar-brand {
   padding: 0;
 }
 .navbar-brand img {
-  height: 24px;
+  height: 21px;
 }
 @media only screen and (max-width: 767px) {
   .navbar-brand img {
-    height: 20px;
+    height: 18px;
   }
 }
 
@@ -270,7 +275,7 @@ h6 a {
   color: purple;
 }
 .navbar-nav .nav-item a img {
-  height: 30px;
+  height: 26px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -314,7 +319,7 @@ h6 a {
 # hero-area
 --------------------------------------------------------------*/
 .hero-area {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 @media only screen and (max-width: 991px) {
   .hero-area {
@@ -322,7 +327,7 @@ h6 a {
   }
 }
 .hero-area .hero-text p {
-  font-size: 55px;
+  font-size: 40px;
 }
 @media only screen and (max-width: 1199px) {
   .hero-area .hero-text p {
@@ -353,60 +358,55 @@ h6 a {
     padding: 40px 0px;
   }
 }
-.free-min .mint-s {
-  height: 100%;
-  background-color: #fff;
-}
-@media only screen and (max-width: 991px) {
-  .free-min .mint-s {
-    background-color: #111111;
-    height: auto;
-  }
-}
 .free-min .mint-s h3 {
-  font-size: 43px;
-  background-color: #111111;
+  font-size: 34px;
+  margin-bottom: 5px;
 }
 @media only screen and (max-width: 1199px) {
   .free-min .mint-s h3 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 0.8;
   }
 }
 @media only screen and (max-width: 991px) {
   .free-min .mint-s h3 {
     line-height: 0.7;
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 7px;
   }
 }
 @media only screen and (max-width: 767px) {
   .free-min .mint-s h3 {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 .free-min .mint-box {
   background-color: #fff;
   text-align: center;
+  padding: 109px 20px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 991px) {
   .free-min .mint-box {
     padding: 60px 20px;
   }
 }
-.free-min .mint-box h2 {
+
+.btn-main {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #111111;
+  border-radius: 9px;
+  padding: 2px 14px 6px 14px;
+  font-size: 32px;
+  line-height: 1;
   color: #111111;
-  font-family: var(--bs-font-sans-serif);
-  font-weight: 700;
-  font-size: 54px;
-  position: relative;
-  top: 150px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-@media only screen and (max-width: 991px) {
-  .free-min .mint-box h2 {
-    top: unset;
-    font-size: 40px;
-  }
+.btn-main:hover {
+  background-color: purple;
+  color: #fff;
 }
 
 footer {
@@ -420,7 +420,7 @@ footer {
   }
 }
 footer p {
-  font-size: 33px;
+  font-size: 28px;
   line-height: 0.7;
 }
 @media only screen and (max-width: 991px) {
@@ -430,7 +430,7 @@ footer p {
 }
 @media only screen and (max-width: 482px) {
   footer p {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=main.css.map */

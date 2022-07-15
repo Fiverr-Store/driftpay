@@ -3,13 +3,13 @@
 --------------------------------------------------------------*/
 
 .hero-area{
-  padding-top: 60px;
+padding-top: 100px;
   @media only screen and (max-width: 991px) {
    padding-top: 30px;
   }
 .hero-text{
   p{
-    font-size: 55px;
+    font-size: 40px;
     @media only screen and (max-width: 1199px) {
      font-size: 46px;
      line-height: .8;
@@ -24,4 +24,5 @@
 
   }
 }
+
 }
