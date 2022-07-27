@@ -125,6 +125,24 @@
      padding: 20px 0px;
     }
   }
+
+  .legal-text{
+    text-align: center;
+    font-size: 15px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    @media only screen and (max-width: 767px) {
+     padding: 20px 0px;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: #939393;
+    }
+  }
+
 .btn-flex{
   display: flex;
   justify-content: space-between;
