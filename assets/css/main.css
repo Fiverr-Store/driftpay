@@ -656,7 +656,7 @@ h6 a {
 }
 @media only screen and (max-width: 482px) {
   .hero-area .left-wave {
-    max-width: 320px;
+    max-width: 350px;
   }
 }
 .hero-area .right-wave {
@@ -689,7 +689,7 @@ h6 a {
 }
 @media only screen and (max-width: 482px) {
   .hero-area .right-wave {
-    max-width: 120px;
+    max-width: 140px;
   }
 }
 
@@ -918,7 +918,15 @@ h6 a {
 }
 .genral .btn-submit {
   margin-top: 33px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   text-align: center;
   border: 0;

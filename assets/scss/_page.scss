@@ -93,7 +93,9 @@
   }
   .btn-submit{
     margin-top: 33px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     text-align: center;
     border: 0;
