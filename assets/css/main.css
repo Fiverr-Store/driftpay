@@ -523,6 +523,32 @@ h6 a {
   bottom: -8%;
   left: 10%;
 }
+.circles li:nth-child(4) {
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#27ef8d), to(#ffffff)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #27ef8d 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  -webkit-transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+          transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+  position: fixed;
+  top: -2%;
+  right: -4%;
+}
+.circles li:nth-child(5) {
+  width: 500px;
+  height: 500px;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#27ef8d), to(#ffffff)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #27ef8d 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
+  border-radius: 100%;
+  position: fixed;
+  bottom: -7%;
+  right: -11%;
+}
 
 /*--------------------------------------------------------------
 # mockup
