@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .mockup {
-	padding: 70px 0px;
+	padding: 80px 0px;
 	@media only screen and (max-width: 767px) {
 		padding: 50px 0px;
 	}
@@ -12,15 +12,19 @@
 	}
 	.mock-text {
 		h2 {
-			font-size: 47px;
-			font-weight: 700;
+			font-family: $font-sf-bold;
+			font-size: 44px;
 			margin-bottom: 20px;
+			@media only screen and (max-width: 1499px) {
+				font-size: 34px;
+				margin-bottom: 16px;
+			}
 			@media only screen and (max-width: 1199px) {
-				font-size: 38px;
+				font-size: 34px;
 				margin-bottom: 16px;
 			}
 			@media only screen and (max-width: 991px) {
-				font-size: 35px;
+				font-size: 32px;
 			}
 			@media only screen and (max-width: 767px) {
 				font-size: 28px;
@@ -28,8 +32,11 @@
 			}
 		}
 		p {
-			font-size: 16px;
-			font-weight: 500;
+			font-size: 20px;
+			color: #848484;
+      @media only screen and (max-width: 767px) {
+       font-size: 18px;
+      }
 		}
 		h3 {
 			font-size: 32px;
@@ -82,5 +89,43 @@
 			opacity: 0.4;
 			margin-top: 8px;
 		}
+	}
+
+	.form-con {
+		position: relative;
+		.input-style {
+			height: 60px;
+			box-shadow: 0px 3px 6px #00000029;
+			border-radius: 50px;
+      border: 0;
+      background-color: #fff;
+      text-indent: 10px;
+      font-size: 17px;
+      &:focus{
+        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+      }
+      &::placeholder{
+        color: #bcbcbc;
+      }
+		}
+    .btn-submit{
+      text-decoration: none;
+      border: 0;
+      background-color: $primary-color;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 50px;
+      padding: 10.5px 25px;
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      transition: all .2s ease-in;
+      &:hover,&:focus{
+        background-color: darken($color: $primary-color, $amount: 10%);
+        color: #fff;
+      }
+
+    }
 	}
 }

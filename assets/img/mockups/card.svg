@@ -1,0 +1,30 @@
+<svg id="Group_99" data-name="Group 99" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="575.927" height="361.838" viewBox="0 0 575.927 361.838">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.078" y1="-0.822" x2="1.039" y2="2.594" gradientUnits="objectBoundingBox">
+      <stop offset="0.958" stop-color="#fff"/>
+      <stop offset="1" stop-color="#73eb95"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.038" y1="-1.575" x2="0.845" y2="1.921" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#73eb95"/>
+      <stop offset="0.067" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="2.293" x2="0.5" y2="0.002" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#73eb95"/>
+      <stop offset="0.375" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_80" data-name="Path 80" d="M-1060.112,392.162h543.429a16.249,16.249,0,0,0,16.249-16.249V46.573a16.248,16.248,0,0,0-16.249-16.249h-543.429a16.248,16.248,0,0,0-16.249,16.249V375.913A16.249,16.249,0,0,0-1060.112,392.162Z" transform="translate(1076.361 -30.324)" fill="#19f094" opacity="0.9"/>
+  <path id="Path_81" data-name="Path 81" d="M-777.691,30.324S-479.633,138.059-591.5,392.162h-468.611s-16.249-1.685-16.249-16.249V46.573s.278-16.249,16.249-16.249Z" transform="translate(1076.361 -30.324)" fill="#fff" opacity="0.33"/>
+  <path id="Path_82" data-name="Path 82" d="M-871.131,30.324S-739.4,257.24-977.585,392.162h-82.527s-16.249-2.042-16.249-16.249V46.573s.826-16.249,16.249-16.249Z" transform="translate(1076.361 -30.324)" fill="#fff" opacity="0.252"/>
+  <g id="Group_98" data-name="Group 98" transform="translate(38.926 36.682)">
+    <path id="Path_83" data-name="Path 83" d="M-948.121,98h-40.591a2.068,2.068,0,0,1-1.8-1.051l-1.42-2.513a4.373,4.373,0,0,0-3.808-2.222l-11.551,0a6.61,6.61,0,0,1-6.608-6.61h0a6.61,6.61,0,0,1,6.61-6.61h6.882a3.844,3.844,0,0,1,3.548,2.365l.927,2.222a1.961,1.961,0,0,0,1.809,1.206h24.469A30.422,30.422,0,0,1-946.82,95.062,1.757,1.757,0,0,1-948.121,98Z" transform="translate(1022.059 -78.985)" fill="url(#linear-gradient)"/>
+    <path id="Path_84" data-name="Path 84" d="M-941.823,123.239a30.576,30.576,0,0,1-.643,6.246,1.236,1.236,0,0,1-1.206.991H-980.96a2.1,2.1,0,0,1-1.938-1.292l-.5-1.2a5.36,5.36,0,0,0-4.947-3.3h-29.708a6.668,6.668,0,0,1-6.668-6.668h0a6.668,6.668,0,0,1,6.668-6.668h24.906a4.218,4.218,0,0,1,3.894,2.6l.876,2.118a1.747,1.747,0,0,0,1.615,1.079h43.42a1.1,1.1,0,0,1,1.079.919A30.568,30.568,0,0,1-941.823,123.239Z" transform="translate(1024.723 -86.951)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_85" data-name="Path 85" d="M-943.741,149.65a1.177,1.177,0,0,1,.875,1.963q-.547.608-1.125,1.187a30.471,30.471,0,0,1-20.975,8.923,1.107,1.107,0,0,1-1.01-.616l-1.736-3.471a2.509,2.509,0,0,0-2.437-1.7h-21.059a6.041,6.041,0,0,1-6.04-6.04h0a6.041,6.041,0,0,1,6.04-6.041h15.5a3.544,3.544,0,0,1,3.272,2.181l1.065,2.554a1.722,1.722,0,0,0,1.588,1.058Z" transform="translate(1017.96 -94.955)" fill="url(#linear-gradient-3)"/>
+  </g>
+  <text id="_5271" data-name="5271" transform="translate(510.146 326.438)" fill="#fff" font-size="22" font-family="SFProRounded-Medium, SF Pro Rounded" font-weight="500"><tspan x="0" y="0">5271</tspan></text>
+  <rect id="Rectangle_120" data-name="Rectangle 120" width="5.058" height="5.058" rx="2.529" transform="translate(446.52 317.269)" fill="#fff"/>
+  <rect id="Rectangle_121" data-name="Rectangle 121" width="5.058" height="5.058" rx="2.529" transform="translate(456.913 317.269)" fill="#fff"/>
+  <rect id="Rectangle_122" data-name="Rectangle 122" width="5.058" height="5.058" rx="2.529" transform="translate(467.307 317.269)" fill="#fff"/>
+  <rect id="Rectangle_123" data-name="Rectangle 123" width="5.058" height="5.058" rx="2.529" transform="translate(477.7 317.269)" fill="#fff"/>
+  <text id="Driftcard" transform="translate(426.31 54.516)" fill="#fff" font-size="35" font-family="SFProRounded-Medium, SF Pro Rounded" font-weight="500"><tspan x="0" y="0">Driftcard</tspan></text>
+</svg>
