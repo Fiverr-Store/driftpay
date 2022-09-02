@@ -1,10 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+	font-family: "SF Pro Rounded Regular";
+	src: url("../fonts/ead4092f880f75ff0883ced1856b2c37.eot"); /* IE9*/
+	src: url("../fonts/ead4092f880f75ff0883ced1856b2c37.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/ead4092f880f75ff0883ced1856b2c37.woff2")
+			format("woff2"),
+		/* chrome、firefox */
+			url("../fonts/ead4092f880f75ff0883ced1856b2c37.woff") format("woff"),
+		/* chrome、firefox */
+			url("../fonts/ead4092f880f75ff0883ced1856b2c37.ttf")
+			format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url("../fonts/ead4092f880f75ff0883ced1856b2c37.svg#SF Pro Rounded Regular")
+			format("svg"); /* iOS 4.1- */
+}
 
+@font-face {
+	font-family: "SF Pro Rounded Semibold";
+	src: url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.eot"); /* IE9*/
+	src: url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */
+			url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.woff2")
+			format("woff2"),
+		/* chrome、firefox */
+			url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.woff")
+			format("woff"),
+		/* chrome、firefox */
+			url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.ttf")
+			format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url("../fonts/bold/49cf9e586b122fd8b8cf67c4df697fb9.svg#SF Pro Rounded Semibold")
+			format("svg"); /* iOS 4.1- */
+}
 
-
-$bg-white:#FFFFFF;
-$bg-black:#000;
-$bg-nav-collapse:#fff;
-$primary-color:#19F094;
-$secondary-color:#707070;
+$font-sf-regular: "SF Pro Rounded Regular";
+$font-sf-bold: "SF Pro Rounded Semibold";
+$bg-white: #ffffff;
+$bg-black: #000;
+$bg-nav-collapse: #fff;
+$primary-color: #19f094;
+$secondary-color: #707070;
 $text-color: #000000;

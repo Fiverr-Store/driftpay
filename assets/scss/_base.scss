@@ -8,8 +8,8 @@ html {
 
 
 body {
-	font-family: "Montserrat", sans-serif;
-	font-size: 15px;
+	font-family: $font-sf-regular;
+	font-size: 16px;
   font-weight: 400;
 	font-style: normal;
 	color: $text-color;
@@ -24,13 +24,7 @@ body {
 	box-sizing: border-box;
 }
 
-@media only screen and (max-width: 480px) {
-	.wow {
-		-webkit-animation-name: none !important;
-		animation-name: none !important;
-		visibility: visible !important;
-	}
-}
+
 
 a {
 	&:hover {
@@ -65,7 +59,6 @@ h5,
 h6 {
 	margin: 0;
 	color: $text-color;
-  font-weight: 700;
 }
 p {
 	margin: 0;
