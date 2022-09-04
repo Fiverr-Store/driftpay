@@ -1409,6 +1409,21 @@ h6 a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-widget ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .footer .footer-widget li {
   display: inline-block;
@@ -1418,13 +1433,7 @@ h6 a {
 }
 @media only screen and (max-width: 767px) {
   .footer .footer-widget li:not(:last-child) {
-    margin-right: 0px;
-    margin-bottom: 8px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .footer .footer-widget li {
-    display: block;
+    margin-right: 10px;
   }
 }
 .footer .footer-widget .footer-logo {
@@ -1447,12 +1456,11 @@ h6 a {
   .footer .footer-widget .footer-logo {
     height: 35px;
     margin-right: 5;
-    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 482px) {
   .footer .footer-widget .footer-logo {
-    height: 33px;
+    height: 35px;
     margin-right: 3px;
   }
 }
@@ -1473,7 +1481,9 @@ h6 a {
 }
 @media only screen and (max-width: 991px) {
   .footer .downloand-btn {
-    padding-top: 16px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 22px;
   }
 }
 .footer .downloand-btn a {
@@ -1482,17 +1492,6 @@ h6 a {
 }
 .footer .downloand-btn a:not(:last-child) {
   margin-right: 5px;
-}
-@media only screen and (max-width: 767px) {
-  .footer .downloand-btn a:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 6px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .footer .downloand-btn a {
-    display: block;
-  }
 }
 .footer .downloand-btn a img {
   height: 55px;
@@ -1510,10 +1509,9 @@ h6 a {
 .footer .footer-social {
   text-align: end;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .footer .footer-social {
-    text-align: start;
-    padding-top: 14px;
+    text-align: center;
   }
 }
 .footer .footer-social a {
