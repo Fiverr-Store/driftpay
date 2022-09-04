@@ -389,6 +389,16 @@ h6 a {
 .hero-area .hero-inner {
   text-align: center;
 }
+.hero-area .hero-inner .hero-sub {
+  margin-top: 16px;
+  font-size: 16px;
+  opacity: 0.6;
+}
+@media only screen and (max-width: 767px) {
+  .hero-area .hero-inner .hero-sub {
+    margin-top: 8px;
+  }
+}
 .hero-area .hero-logo {
   height: 55px;
 }
@@ -419,13 +429,6 @@ h6 a {
     font-size: 22px;
   }
 }
-.hero-area .hero-title p {
-  font-weight: 500;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 15px;
-}
 .hero-area .mobile-mockup {
   padding-top: 10px;
   position: relative;
@@ -442,7 +445,7 @@ h6 a {
 }
 .hero-area .mobile-mockup .img-hero {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1060px;
   height: auto;
   position: relative;
   z-index: -2;
@@ -715,12 +718,12 @@ h6 a {
 }
 .mockup .mock-text h2 {
   font-family: "SF Pro Rounded Semibold";
-  font-size: 44px;
+  font-size: 47px;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1499px) {
   .mockup .mock-text h2 {
-    font-size: 34px;
+    font-size: 35px;
     margin-bottom: 16px;
   }
 }
@@ -737,13 +740,18 @@ h6 a {
 }
 @media only screen and (max-width: 767px) {
   .mockup .mock-text h2 {
-    font-size: 28px;
+    font-size: 29px;
     margin-bottom: 10px;
   }
 }
 .mockup .mock-text p {
-  font-size: 20px;
+  font-size: 22px;
   color: #848484;
+}
+@media only screen and (max-width: 991px) {
+  .mockup .mock-text p {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .mockup .mock-text p {
@@ -810,8 +818,8 @@ h6 a {
   }
 }
 .mockup .point-box .info {
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   color: #000000;
   opacity: 0.4;
   margin-top: 8px;
@@ -870,7 +878,7 @@ h6 a {
 }
 
 .video-mockup {
-  max-width: 250px;
+  max-width: 290px;
 }
 @media only screen and (max-width: 991px) {
   .video-mockup {
@@ -882,8 +890,7 @@ h6 a {
 .video-mockup video {
   width: 100%;
   height: auto;
-  overflow: hidden;
-  border-radius: 32px;
+  outline: none;
 }
 
 /*--------------------------------------------------------------
