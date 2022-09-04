@@ -17,21 +17,23 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    @media only screen and (max-width: 991px) {
-     justify-content: center;
-    }
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+
   }
   li{
     &:not(:last-child) {
     margin-right: 18px;
     @media only screen and (max-width: 767px) {
-     margin-right: 10px;
+     margin-right: 0px;
+     margin-bottom: 8px;
     }
     }
     display: inline-block;
+    @media only screen and (max-width: 767px) {
+     display: block;
+    }
   }
   .footer-logo{
     height: 55px;
@@ -47,6 +49,7 @@
     @media only screen and (max-width: 767px) {
      height: 35px;
      margin-right: 5;
+     margin-bottom: 10px;
     }
     @media only screen and (max-width: 482px) {
      height: 33px;
@@ -69,16 +72,21 @@
  .downloand-btn{
   padding-top: 26px;
   @media only screen and (max-width: 991px) {
-   text-align: center;
    padding-top: 16px;
-   padding-bottom: 16px;
   }
   a{
     &:not(:last-child) {
     margin-right: 5px;
+    @media only screen and (max-width: 767px) {
+     margin-right: 0;
+     margin-bottom: 6px;
+    }
     }
     text-decoration: none;
     display: inline-block;
+    @media only screen and (max-width: 767px) {
+     display: block;
+    }
     img{
       height: 55px;
       @media only screen and (max-width: 991px) {
@@ -93,8 +101,9 @@
 
  .footer-social{
   text-align: end;
-  @media only screen and (max-width: 991px) {
-   text-align: center;
+  @media only screen and (max-width: 767px) {
+   text-align: start;
+   padding-top: 14px;
   }
   a{
     &:not(:last-child) {
