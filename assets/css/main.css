@@ -1391,10 +1391,147 @@ h6 a {
 # footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 30px 0px;
-  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
-.footer p {
-  font-size: 14px;
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding-bottom: 40px;
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+.footer .footer-widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-widget ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.footer .footer-widget li {
+  display: inline-block;
+}
+.footer .footer-widget li:not(:last-child) {
+  margin-right: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-widget li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer .footer-widget .footer-logo {
+  height: 55px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1299px) {
+  .footer .footer-widget .footer-logo {
+    margin-right: 15px;
+    height: 53px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-widget .footer-logo {
+    height: 47px;
+    margin-right: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-widget .footer-logo {
+    height: 35px;
+    margin-right: 5;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .footer .footer-widget .footer-logo {
+    height: 33px;
+    margin-right: 3px;
+  }
+}
+.footer .footer-widget a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2F3031;
+  font-size: 18px;
+  font-family: "SF Pro Rounded Semibold";
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-widget a {
+    font-size: 16px;
+  }
+}
+.footer .downloand-btn {
+  padding-top: 26px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .downloand-btn {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+.footer .downloand-btn a {
+  text-decoration: none;
+  display: inline-block;
+}
+.footer .downloand-btn a:not(:last-child) {
+  margin-right: 5px;
+}
+.footer .downloand-btn a img {
+  height: 55px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .downloand-btn a img {
+    height: 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .downloand-btn a img {
+    height: 37px;
+  }
+}
+.footer .footer-social {
+  text-align: end;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-social {
+    text-align: center;
+  }
+}
+.footer .footer-social a {
+  text-decoration: none;
+  display: inline-block;
+}
+.footer .footer-social a:not(:last-child) {
+  margin-right: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-social a:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer .footer-social a img {
+  height: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-social a img {
+    height: 21px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
