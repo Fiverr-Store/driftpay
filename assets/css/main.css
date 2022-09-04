@@ -448,7 +448,6 @@ h6 a {
   max-width: 1060px;
   height: auto;
   position: relative;
-  z-index: -2;
 }
 .hero-area .mobile-mockup p {
   color: #000000;
