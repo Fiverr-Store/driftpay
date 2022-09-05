@@ -288,6 +288,11 @@ h6 a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+@media (min-width: 1400px) {
+  .navbar-area .container {
+    max-width: 1400px;
+  }
+}
 
 .navbar {
   padding: 0;

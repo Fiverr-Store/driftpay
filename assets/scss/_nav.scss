@@ -9,6 +9,13 @@
 	width: 100%;
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
+  .container{
+    @media (min-width: 1400px){
+      max-width: 1400px
+    }
+  }
+
+
 }
 
 .navbar {
