@@ -53,9 +53,9 @@
 
 			a {
       &:not(:last-child) {
-        margin-right: 15px;
+        margin-right: 20px;
         @media only screen and (max-width: 767px) {
-         margin-right: 8px;
+         margin-right: 14px;
         }
         }
         display: inline-flex;

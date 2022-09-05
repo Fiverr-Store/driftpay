@@ -98,9 +98,9 @@
   }
   a{
     &:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 20px;
     @media only screen and (max-width: 767px) {
-     margin-right: 10px;
+     margin-right: 14px;
     }
     }
     text-decoration: none;
