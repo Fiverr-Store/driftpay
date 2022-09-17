@@ -12,6 +12,7 @@
 	}
 	@media only screen and (max-width: 482px) {
 		padding: 15px 0px;
+    min-height: 90vh;
 	}
 	.hero-inner {
 		text-align: center;
@@ -32,6 +33,10 @@
 		@media only screen and (max-width: 767px) {
 			height: 44px;
 		}
+    @media only screen and (max-width: 482px) {
+      margin-top: 25px;
+      margin-bottom: 16px;
+    }
 	}
 	.hero-title {
 		position: relative;
@@ -43,7 +48,11 @@
 			}
 			@media only screen and (max-width: 767px) {
 				font-size: 22px;
+        margin-bottom: 15px;
 			}
+      @media only screen and (max-width: 482px) {
+       margin-bottom: 35px;
+      }
 		}
 
 	}
@@ -54,7 +63,7 @@
 			padding-top: 10px;
 		}
 		@media only screen and (max-width: 482px) {
-			padding-top: 0;
+      margin-bottom: 35px;
 		}
 		.img-hero {
 			width: 100%;
@@ -74,6 +83,10 @@
 		position: relative;
 		padding-left: -13px;
 		padding-right: -13px;
+    @media only screen and (max-width: 482px) {
+     padding-left: 0;
+     padding-right: 0;
+       }
 		a {
 			margin-left: 13px;
 			margin-right: 13px;
@@ -82,7 +95,14 @@
 			@media only screen and (max-width: 767px) {
 				max-width: 230px;
 				margin-top: 10px;
+
 			}
+      @media only screen and (max-width: 482px) {
+     min-width: 100%;
+     margin-left:0px;
+			margin-right:0px;
+      display: block;
+      }
 		}
 	}
 }

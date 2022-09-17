@@ -389,6 +389,7 @@ h6 a {
 @media only screen and (max-width: 482px) {
   .hero-area {
     padding: 15px 0px;
+    min-height: 90vh;
   }
 }
 .hero-area .hero-inner {
@@ -417,6 +418,12 @@ h6 a {
     height: 44px;
   }
 }
+@media only screen and (max-width: 482px) {
+  .hero-area .hero-logo {
+    margin-top: 25px;
+    margin-bottom: 16px;
+  }
+}
 .hero-area .hero-title {
   position: relative;
 }
@@ -432,6 +439,12 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .hero-area .hero-title h1 {
     font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .hero-area .hero-title h1 {
+    margin-bottom: 35px;
   }
 }
 .hero-area .mobile-mockup {
@@ -445,7 +458,7 @@ h6 a {
 }
 @media only screen and (max-width: 482px) {
   .hero-area .mobile-mockup {
-    padding-top: 0;
+    margin-bottom: 35px;
   }
 }
 .hero-area .mobile-mockup .img-hero {
@@ -468,6 +481,12 @@ h6 a {
   padding-left: -13px;
   padding-right: -13px;
 }
+@media only screen and (max-width: 482px) {
+  .hero-area .hero-btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .hero-area .hero-btn a {
   margin-left: 13px;
   margin-right: 13px;
@@ -478,6 +497,14 @@ h6 a {
   .hero-area .hero-btn a {
     max-width: 230px;
     margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .hero-area .hero-btn a {
+    min-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
   }
 }
 
