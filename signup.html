@@ -83,7 +83,7 @@
             <span class="code"> +1 </span>
             <input type="text" class="form-control" placeholder="Phone number" >
           </div><!-- /.form-grp -->
-          <a href="verify.html" class="btn-submit"> Continue </a>
+          <a href="#S_Modal" data-bs-toggle="modal" class="btn-submit"> Continue </a>
          </div><!-- /.form-con -->
 
          <p class="legal-text"> By continuing, you agree to our <a href="#"> Terms of Service </a> and <a href="#"> Privacy Policy </a> </p>
@@ -117,6 +117,27 @@
       <div></div>
     </div>
   </div>
+
+    <!-- Modal HTML -->
+    <div id="S_Modal" class="modal fade modal-index">
+      <div class="modal-dialog modal-confirm  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="icon-box">
+              <img src="assets/img/checkmark.svg" alt="">
+            </div>
+            <h4 class="modal-title w-100">Success</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-center" id="resultS">Your info has been submitted. </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success w-100" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
