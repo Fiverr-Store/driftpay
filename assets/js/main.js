@@ -6,9 +6,15 @@
 		document.querySelector(".page-loader").style.opacity = "0";
 		document.querySelector(".page-loader").style.display = "none";
 	}
+
+    window.addEventListener('load', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('S_Modal'))
+     setTimeout(function(){
+      myModal.show();
+     }, 200);
+  })
+
 	window.onscroll = function () {
-
-
 
 		var backToTo = document.querySelector(".scroll-top");
 		if (

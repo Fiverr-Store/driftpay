@@ -6,15 +6,14 @@ html {
 	scroll-behavior: smooth;
 }
 
-
 body {
 	font-family: $font-sf-regular;
 	font-size: 16px;
-  font-weight: 400;
+	font-weight: 400;
 	font-style: normal;
 	color: $text-color;
 	line-height: 1.5;
-  position: relative;
+	position: relative;
 }
 
 * {
@@ -23,9 +22,6 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-
-
 
 a {
 	&:hover {
@@ -73,8 +69,8 @@ h5 a,
 h6 a {
 	color: inherit;
 }
-.section{
-  overflow: hidden;
+.section {
+	overflow: hidden;
 }
 .scroll-top {
 	width: 35px;
@@ -107,89 +103,180 @@ h6 a {
 	}
 }
 
-
-
 /*--------------------------------------------------------------
   ##  Page Loader
   --------------------------------------------------------------*/
-  .page-loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99999999;
-    background-color: #fff;
-  }
+.page-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99999999;
+	background-color: #fff;
+}
 
-  .lds-grid {
-    display: inline-block;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .lds-grid div {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: $primary-color;
-    animation: lds-grid 1.2s linear infinite;
-  }
-  .lds-grid div:nth-child(1) {
-    top: 8px;
-    left: 8px;
-    animation-delay: 0s;
-  }
-  .lds-grid div:nth-child(2) {
-    top: 8px;
-    left: 32px;
-    animation-delay: -0.4s;
-  }
-  .lds-grid div:nth-child(3) {
-    top: 8px;
-    left: 56px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(4) {
-    top: 32px;
-    left: 8px;
-    animation-delay: -0.4s;
-  }
-  .lds-grid div:nth-child(5) {
-    top: 32px;
-    left: 32px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(6) {
-    top: 32px;
-    left: 56px;
-    animation-delay: -1.2s;
-  }
-  .lds-grid div:nth-child(7) {
-    top: 56px;
-    left: 8px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(8) {
-    top: 56px;
-    left: 32px;
-    animation-delay: -1.2s;
-  }
-  .lds-grid div:nth-child(9) {
-    top: 56px;
-    left: 56px;
-    animation-delay: -1.6s;
-  }
-  @keyframes lds-grid {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-  }
+.lds-ellipsis {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.lds-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: $primary-color;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(24px, 0);
+	}
+}
+
+/*--------------------------------------------------------------
+# success-modal
+--------------------------------------------------------------*/
+
+.modal-index {
+	z-index: 9999;
+}
+.modal-confirm {
+	max-width: 325px;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+  border: 0;
+
+	.btn-success {
+		background-color: $primary-color !important;
+	}
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;
+	position: relative;
+  border: 0;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+  font-family: $font-sf-bold;
+	color: #000;
+}
+.modal-confirm p {
+	color: #000;
+	opacity: 0.8;
+	font-size: 16px;
+	font-family: $font-sf-bold;
+}
+.modal-confirm .form-control,
+.modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px;
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.modal-confirm .icon-box {
+	color: #fff;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9;
+	text-align: center;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	background-color: $primary-color;
+	img {
+		height: 30px;
+	}
+}
+.modal-confirm .icon-box i {
+	font-size: 38px;
+	position: relative;
+	top: 13px;
+}
+.modal-confirm.modal-dialog {
+	margin-top: 80px;
+}
+.modal-confirm .btn {
+	color: #fff;
+	border-radius: 4px;
+	/* background: #82ce34; */
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+	/* background: #6fb32b; */
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}

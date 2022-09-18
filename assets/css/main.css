@@ -132,9 +132,8 @@ h6 a {
   background-color: #fff;
 }
 
-.lds-grid {
+.lds-ellipsis {
   display: inline-block;
-  position: absolute;
   width: 80px;
   height: 80px;
   position: absolute;
@@ -144,96 +143,228 @@ h6 a {
           transform: translate(-50%, -50%);
 }
 
-.lds-grid div {
+.lds-ellipsis div {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  top: 33px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: #19f094;
-  -webkit-animation: lds-grid 1.2s linear infinite;
-          animation: lds-grid 1.2s linear infinite;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
-.lds-grid div:nth-child(1) {
-  top: 8px;
+.lds-ellipsis div:nth-child(1) {
   left: 8px;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
 }
 
-.lds-grid div:nth-child(2) {
-  top: 8px;
-  left: 32px;
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
-}
-
-.lds-grid div:nth-child(3) {
-  top: 8px;
-  left: 56px;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-}
-
-.lds-grid div:nth-child(4) {
-  top: 32px;
+.lds-ellipsis div:nth-child(2) {
   left: 8px;
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
 }
 
-.lds-grid div:nth-child(5) {
-  top: 32px;
+.lds-ellipsis div:nth-child(3) {
   left: 32px;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
 }
 
-.lds-grid div:nth-child(6) {
-  top: 32px;
+.lds-ellipsis div:nth-child(4) {
   left: 56px;
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
 }
 
-.lds-grid div:nth-child(7) {
-  top: 56px;
-  left: 8px;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-}
-
-.lds-grid div:nth-child(8) {
-  top: 56px;
-  left: 32px;
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
-}
-
-.lds-grid div:nth-child(9) {
-  top: 56px;
-  left: 56px;
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
-}
-
-@-webkit-keyframes lds-grid {
-  0%, 100% {
-    opacity: 1;
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
-  50% {
-    opacity: 0.5;
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes lds-grid {
-  0%, 100% {
-    opacity: 1;
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
-  50% {
-    opacity: 0.5;
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+/*--------------------------------------------------------------
+# success-modal
+--------------------------------------------------------------*/
+.modal-index {
+  z-index: 9999;
+}
+
+.modal-confirm {
+  max-width: 325px;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+}
+.modal-confirm .btn-success {
+  background-color: #19f094 !important;
+}
+
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+}
+
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+  border: 0;
+}
+
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -15px;
+  font-family: "SF Pro Rounded Semibold";
+  color: #000;
+}
+
+.modal-confirm p {
+  color: #000;
+  opacity: 0.8;
+  font-size: 16px;
+  font-family: "SF Pro Rounded Semibold";
+}
+
+.modal-confirm .form-control,
+.modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.modal-confirm .icon-box {
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -70px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #19f094;
+}
+.modal-confirm .icon-box img {
+  height: 30px;
+}
+
+.modal-confirm .icon-box i {
+  font-size: 38px;
+  position: relative;
+  top: 13px;
+}
+
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
+
+.modal-confirm .btn {
+  color: #fff;
+  border-radius: 4px;
+  /* background: #82ce34; */
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  line-height: normal;
+  border: none;
+}
+
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+  /* background: #6fb32b; */
+  outline: none;
+}
+
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+
 /*--------------------------------------------------------------
 # btn-main
 --------------------------------------------------------------*/
@@ -402,11 +533,12 @@ h6 a {
 }
 @media only screen and (max-width: 767px) {
   .hero-area .hero-inner .hero-sub {
-    margin-top: 8px;
+    margin-top: 16px;
   }
 }
 .hero-area .hero-logo {
   height: 55px;
+  margin-bottom: 5px;
 }
 @media only screen and (max-width: 991px) {
   .hero-area .hero-logo {
@@ -420,7 +552,7 @@ h6 a {
 }
 @media only screen and (max-width: 482px) {
   .hero-area .hero-logo {
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 16px;
   }
 }
@@ -449,6 +581,7 @@ h6 a {
 }
 .hero-area .mobile-mockup {
   padding-top: 10px;
+  margin-top: 10px;
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
@@ -496,7 +629,7 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .hero-area .hero-btn a {
     max-width: 230px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 482px) {
@@ -505,6 +638,7 @@ h6 a {
     margin-left: 0px;
     margin-right: 0px;
     display: block;
+    margin-top: 20px;
   }
 }
 

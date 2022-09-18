@@ -12,31 +12,32 @@
 	}
 	@media only screen and (max-width: 482px) {
 		padding: 15px 0px;
-    min-height: 90vh;
+		min-height: 90vh;
 	}
 	.hero-inner {
 		text-align: center;
-    .hero-sub{
-      margin-top: 16px;
-      font-size: 16px;
-      opacity: .6;
-      @media only screen and (max-width: 767px) {
-       margin-top: 8px;
-      }
-    }
+		.hero-sub {
+			margin-top: 16px;
+			font-size: 16px;
+			opacity: 0.6;
+			@media only screen and (max-width: 767px) {
+				margin-top: 16px;
+			}
+		}
 	}
 	.hero-logo {
 		height: 55px;
+		margin-bottom: 5px;
 		@media only screen and (max-width: 991px) {
 			height: 48px;
 		}
 		@media only screen and (max-width: 767px) {
 			height: 44px;
 		}
-    @media only screen and (max-width: 482px) {
-      margin-top: 25px;
-      margin-bottom: 16px;
-    }
+		@media only screen and (max-width: 482px) {
+			margin-top: 35px;
+			margin-bottom: 16px;
+		}
 	}
 	.hero-title {
 		position: relative;
@@ -48,22 +49,22 @@
 			}
 			@media only screen and (max-width: 767px) {
 				font-size: 22px;
-        margin-bottom: 15px;
+				margin-bottom: 15px;
 			}
-      @media only screen and (max-width: 482px) {
-       margin-bottom: 35px;
-      }
+			@media only screen and (max-width: 482px) {
+				margin-bottom: 35px;
+			}
 		}
-
 	}
 	.mobile-mockup {
 		padding-top: 10px;
+		margin-top: 10px;
 		position: relative;
 		@media only screen and (max-width: 1199px) {
 			padding-top: 10px;
 		}
 		@media only screen and (max-width: 482px) {
-      margin-bottom: 35px;
+			margin-bottom: 35px;
 		}
 		.img-hero {
 			width: 100%;
@@ -83,10 +84,10 @@
 		position: relative;
 		padding-left: -13px;
 		padding-right: -13px;
-    @media only screen and (max-width: 482px) {
-     padding-left: 0;
-     padding-right: 0;
-       }
+		@media only screen and (max-width: 482px) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 		a {
 			margin-left: 13px;
 			margin-right: 13px;
@@ -94,15 +95,15 @@
 			max-width: 260px;
 			@media only screen and (max-width: 767px) {
 				max-width: 230px;
-				margin-top: 10px;
-
+				margin-top: 20px;
 			}
-      @media only screen and (max-width: 482px) {
-     min-width: 100%;
-     margin-left:0px;
-			margin-right:0px;
-      display: block;
-      }
+			@media only screen and (max-width: 482px) {
+				min-width: 100%;
+				margin-left: 0px;
+				margin-right: 0px;
+				display: block;
+        margin-top: 20px;
+			}
 		}
 	}
 }
@@ -111,9 +112,9 @@
 # circles
 --------------------------------------------------------------*/
 .circles {
-  @media only screen and (max-width: 767px) {
-   display: none;
-  }
+	@media only screen and (max-width: 767px) {
+		display: none;
+	}
 	ul {
 		list-style: none;
 		margin: 0;
@@ -141,18 +142,18 @@
 				top: 12%;
 				left: 5%;
 			}
-      @media only screen and (max-width: 1199px) {
-        width: 102px;
+			@media only screen and (max-width: 1199px) {
+				width: 102px;
 				height: 102px;
 				top: 10%;
 				left: 3%;
-      }
-      @media only screen and (max-width: 767px) {
-        width: 90px;
+			}
+			@media only screen and (max-width: 767px) {
+				width: 90px;
 				height: 90px;
-        top: 8%;
-       left: 1%;
-      }
+				top: 8%;
+				left: 1%;
+			}
 		}
 		&:nth-child(2) {
 			width: 440px;
@@ -174,24 +175,24 @@
 				bottom: 0;
 				left: -7%;
 			}
-      @media only screen and (max-width: 1199px) {
+			@media only screen and (max-width: 1199px) {
 				width: 250px;
 				height: 250px;
 				bottom: 0;
 				left: -6%;
 			}
-      @media only screen and (max-width: 767px) {
-        width: 180px;
+			@media only screen and (max-width: 767px) {
+				width: 180px;
 				height: 180px;
 				bottom: 0;
 				left: -6%;
-      }
-      @media only screen and (max-width: 482px) {
-        width: 150px;
+			}
+			@media only screen and (max-width: 482px) {
+				width: 150px;
 				height: 150px;
 				bottom: 0;
 				left: -9%;
-      }
+			}
 		}
 
 		&:nth-child(3) {
@@ -212,18 +213,18 @@
 				bottom: -6%;
 				left: 7%;
 			}
-      @media only screen and (max-width: 1199px) {
+			@media only screen and (max-width: 1199px) {
 				width: 150px;
 				height: 150px;
 				bottom: -4%;
 				left: 6%;
 			}
-      @media only screen and (max-width: 767px) {
-        width: 110px;
+			@media only screen and (max-width: 767px) {
+				width: 110px;
 				height: 110px;
 				bottom: -2%;
 				left: 6%;
-      }
+			}
 		}
 		&:nth-child(4) {
 			width: 290px;
@@ -245,24 +246,24 @@
 				top: -2%;
 				right: -4%;
 			}
-      @media only screen and (max-width: 1199px) {
+			@media only screen and (max-width: 1199px) {
 				width: 180px;
 				height: 180px;
 				top: -2%;
 				right: -4%;
 			}
-      @media only screen and (max-width: 767px) {
-        width: 140px;
+			@media only screen and (max-width: 767px) {
+				width: 140px;
 				height: 140px;
 				top: -2%;
 				right: -4%;
-      }
-      @media only screen and (max-width: 482px) {
-        width: 120px;
+			}
+			@media only screen and (max-width: 482px) {
+				width: 120px;
 				height: 120px;
 				top: -4%;
 				right: -9%;
-      }
+			}
 		}
 		&:nth-child(5) {
 			width: 500px;
@@ -282,24 +283,24 @@
 				bottom: -7%;
 				right: -11%;
 			}
-      @media only screen and (max-width: 1199px) {
+			@media only screen and (max-width: 1199px) {
 				width: 290px;
 				height: 290px;
 				bottom: -6%;
 				right: -10%;
 			}
-      @media only screen and (max-width: 767px) {
-        width: 210px;
+			@media only screen and (max-width: 767px) {
+				width: 210px;
 				height: 210px;
 				bottom: -6%;
 				right: -12%;
-      }
-      @media only screen and (max-width: 482px) {
-        width: 190px;
+			}
+			@media only screen and (max-width: 482px) {
+				width: 190px;
 				height: 190px;
 				bottom: -6%;
 				right: -20%;
-      }
+			}
 		}
 	}
 }
