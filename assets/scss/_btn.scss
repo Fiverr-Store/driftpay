@@ -9,6 +9,7 @@
   border: 0;
   background-color: $primary-color;
   color: $bg-white;
+  font-family: $font-sf-bold;
   font-size: 15px;
   padding: 12px 36px;
   border-radius: 50px;
@@ -23,8 +24,9 @@
   display: inline-block;
   text-align: center;
   border: 0;
-  background-color: $secondary-color;
-  color: $bg-white;
+  background-color: #E6E7E5;
+  color: $text-color;
+  font-family: $font-sf-bold;
   font-size: 15px;
   padding: 12px 36px;
   border-radius: 50px;
