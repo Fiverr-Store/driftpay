@@ -12,7 +12,7 @@
 	width: 100%;
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 .navbar {
@@ -62,7 +62,8 @@
 				position: relative;
 				&:hover,
 				&.active {
-					color: $primary-color;
+          background-color: $primary-color;
+					color: $bg-white;
 				}
 
 				@media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -162,6 +163,7 @@
     left: 0;
     z-index: 99;
     transition: all 0.3s ease-out 0s;
+    background-color: $bg-white;
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.08);
     .navbar {
 

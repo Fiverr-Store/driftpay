@@ -3,8 +3,13 @@
 --------------------------------------------------------------*/
 .genral{
   padding: 60px 0px;
+  padding-top: 100px;
+  @media only screen and (max-width: 1199px) {
+   padding-top: 90px;
+  }
   @media only screen and (max-width: 991px) {
    padding: 40px 0px;
+   padding-top: 70px;
   }
   .main-wrapper{
     max-width: 629px;
@@ -193,4 +198,142 @@
 
 }
 
+}
+
+
+/*--------------------------------------------------------------
+# abt-sec
+--------------------------------------------------------------*/
+.abt-sec{
+  padding: 70px 0px;
+  padding-top: 130px;
+  @media only screen and (max-width: 1199px) {
+   padding-top: 110px;
+  }
+  @media only screen and (max-width: 991px) {
+   padding-top: 100px;
+   padding-bottom: 60px;
+  }
+  .js-tabs{
+    padding-bottom: 50px;
+    @media only screen and (max-width: 991px) {
+     padding-bottom: 35px;
+    }
+    li{
+      &:not(:last-child) {
+      margin-right: 12px;
+      }
+    }
+    .nav-link {
+      display: block;
+       padding: 6px 20px;
+       font-family: $font-sf-bold;
+       font-size: 15px;
+      color: $text-color;
+      text-decoration: none;
+      border-radius: 5px;
+      &.active{
+        background-color: #F3F3F3;
+        color: $text-color;
+      }
+  }
+  }
+
+  .tab-box{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: $text-color;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    padding: 26px 26px 0px 26px;
+    height: 100%;
+    @media only screen and (max-width: 767px) {
+     padding: 20px 20px 0px 20px;
+    }
+    h1{
+      font-family: $font-sf-bold;
+      font-size: 28px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 24px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 23px;
+      }
+    }
+    .detail{
+      padding-bottom: 30px;
+      @media only screen and (max-width: 991px) {
+       padding-bottom: 0px;
+       padding-top: 25px;
+      }
+      h4{
+        font-family: $font-sf-bold;
+        font-size: 20px;
+        margin-bottom: 4px;
+        @media only screen and (max-width: 1199px) {
+          font-size: 18px;
+         }
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+
+}
+
+.blog-page{
+  background-color: #F3F3F3;
+  padding: 30px 30px;
+  border-radius: 15px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 991px) {
+   padding: 20px 20px;
+  }
+  .heading-text{
+    text-align: center;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 767px) {
+     margin-bottom: 20px;
+    }
+    h1{
+      font-family: $font-sf-bold;
+      font-size: 32px;
+      margin-bottom: 8px;
+      @media only screen and (max-width: 767px) {
+       font-size: 24px;
+       margin-bottom: 6px;
+      }
+    }
+    P{
+      font-family: $font-sf-bold;
+      font-size: 18px;
+      @media only screen and (max-width: 767px) {
+       font-size: 16px;
+      }
+      span{
+        font-family: $font-sf-regular;
+        display: inline-block;
+        padding-left: 15px;
+      }
+    }
+  }
+  .blog-text{
+    p{
+      &:not(:last-child) {
+      margin-bottom: 20px;
+      @media only screen and (max-width: 767px) {
+       margin-bottom: 16px;
+      }
+      }
+      font-family: $font-sf-bold;
+      font-size: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 15px;
+      }
+    }
+  }
 }

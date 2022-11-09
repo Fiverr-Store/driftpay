@@ -413,7 +413,7 @@ h6 a {
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .navbar {
@@ -471,7 +471,8 @@ h6 a {
   position: relative;
 }
 .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a.active {
-  color: #19f094;
+  background-color: #19f094;
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar .navbar-nav .nav-item a {
@@ -562,6 +563,7 @@ h6 a {
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  background-color: #ffffff;
   -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
@@ -1190,10 +1192,17 @@ h6 a {
 --------------------------------------------------------------*/
 .genral {
   padding: 60px 0px;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 1199px) {
+  .genral {
+    padding-top: 90px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .genral {
     padding: 40px 0px;
+    padding-top: 70px;
   }
 }
 .genral .main-wrapper {
@@ -1422,6 +1431,165 @@ h6 a {
 .genral .btn-com.btn-help {
   background-color: #E5E5E5;
   color: #000000;
+}
+
+/*--------------------------------------------------------------
+# abt-sec
+--------------------------------------------------------------*/
+.abt-sec {
+  padding: 70px 0px;
+  padding-top: 130px;
+}
+@media only screen and (max-width: 1199px) {
+  .abt-sec {
+    padding-top: 110px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .abt-sec {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+.abt-sec .js-tabs {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .abt-sec .js-tabs {
+    padding-bottom: 35px;
+  }
+}
+.abt-sec .js-tabs li:not(:last-child) {
+  margin-right: 12px;
+}
+.abt-sec .js-tabs .nav-link {
+  display: block;
+  padding: 6px 20px;
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.abt-sec .js-tabs .nav-link.active {
+  background-color: #F3F3F3;
+  color: #000000;
+}
+.abt-sec .tab-box {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  background-color: #F3F3F3;
+  border-radius: 15px;
+  padding: 26px 26px 0px 26px;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .abt-sec .tab-box {
+    padding: 20px 20px 0px 20px;
+  }
+}
+.abt-sec .tab-box h1 {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 28px;
+}
+@media only screen and (max-width: 1199px) {
+  .abt-sec .tab-box h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .abt-sec .tab-box h1 {
+    font-size: 23px;
+  }
+}
+.abt-sec .tab-box .detail {
+  padding-bottom: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .abt-sec .tab-box .detail {
+    padding-bottom: 0px;
+    padding-top: 25px;
+  }
+}
+.abt-sec .tab-box .detail h4 {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+@media only screen and (max-width: 1199px) {
+  .abt-sec .tab-box .detail h4 {
+    font-size: 18px;
+  }
+}
+.abt-sec .tab-box .detail p {
+  font-size: 15px;
+}
+
+.blog-page {
+  background-color: #F3F3F3;
+  padding: 30px 30px;
+  border-radius: 15px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 991px) {
+  .blog-page {
+    padding: 20px 20px;
+  }
+}
+.blog-page .heading-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-page .heading-text {
+    margin-bottom: 20px;
+  }
+}
+.blog-page .heading-text h1 {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-page .heading-text h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+}
+.blog-page .heading-text P {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-page .heading-text P {
+    font-size: 16px;
+  }
+}
+.blog-page .heading-text P span {
+  font-family: "SF Pro Rounded Regular";
+  display: inline-block;
+  padding-left: 15px;
+}
+.blog-page .blog-text p {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 16px;
+}
+.blog-page .blog-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-page .blog-text p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-page .blog-text p {
+    font-size: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
