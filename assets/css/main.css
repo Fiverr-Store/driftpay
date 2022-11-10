@@ -638,7 +638,6 @@ h6 a {
   .hero-area {
     padding: 15px 0px;
     padding-top: 60px;
-    min-height: 90vh;
   }
 }
 .hero-area .hero-inner {
@@ -1010,21 +1009,24 @@ h6 a {
     padding: 35px 0px;
   }
 }
+.mockup .mock-text {
+  text-align: center;
+}
 .mockup .mock-text h2 {
   font-family: "SF Pro Rounded Semibold";
-  font-size: 47px;
-  margin-bottom: 20px;
+  font-size: 44px;
+  margin-bottom: 16px;
 }
 @media only screen and (max-width: 1499px) {
   .mockup .mock-text h2 {
     font-size: 35px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .mockup .mock-text h2 {
     font-size: 34px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1035,21 +1037,21 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .mockup .mock-text h2 {
     font-size: 29px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 .mockup .mock-text p {
-  font-size: 22px;
+  font-size: 20px;
   color: #848484;
 }
 @media only screen and (max-width: 991px) {
   .mockup .mock-text p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 767px) {
   .mockup .mock-text p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .mockup .mock-text h3 {
@@ -1120,13 +1122,18 @@ h6 a {
 }
 .mockup .form-con {
   position: relative;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mockup .form-con .input-style {
+  text-align: center;
   height: 60px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  -webkit-box-shadow: 0px 2.5px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2.5px 5px 2px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   border: 0;
+  text-indent: 0;
   background-color: #fff;
   text-indent: 10px;
   font-size: 17px;
@@ -1150,25 +1157,31 @@ h6 a {
 .mockup .form-con .input-style::placeholder {
   color: #bcbcbc;
 }
-.mockup .form-con .btn-submit {
+.mockup .form-con .text-code {
   text-decoration: none;
   border: 0;
-  background-color: #19f094;
-  color: #fff;
+  background-color: transparent;
+  color: #000000;
+  font-family: "SF Pro Rounded Semibold";
   font-size: 16px;
   border-radius: 50px;
-  padding: 10.5px 25px;
+  padding: 5px 15px;
   position: absolute;
   top: 50%;
-  right: 8px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.mockup .form-con .btn-submit:hover, .mockup .form-con .btn-submit:focus {
+.mockup .form-con .text-code:hover, .mockup .form-con .text-code:focus {
   background-color: #0dc979;
   color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .mockup .form-con .text-code {
+    left: 26%;
+  }
 }
 
 .video-mockup {
