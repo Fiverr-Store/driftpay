@@ -1274,7 +1274,7 @@ h6 a {
   position: relative;
 }
 .genral .form-grp .form-control {
-  background-color: #EDEDED;
+  background-color: #ededed;
   border-radius: 50px;
   border: 0;
   height: 60px;
@@ -1300,7 +1300,7 @@ h6 a {
   left: 14px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #EDEDED;
+  background-color: #ededed;
   text-align: center;
   width: 30px;
   height: 60px;
@@ -1439,7 +1439,7 @@ h6 a {
   opacity: 0.7;
 }
 .genral .btn-com.btn-help {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   color: #000000;
 }
 
@@ -1482,7 +1482,7 @@ h6 a {
   border-radius: 5px;
 }
 .abt-sec .js-tabs .nav-link.active {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   color: #000000;
 }
 .abt-sec .tab-box {
@@ -1490,7 +1490,7 @@ h6 a {
   width: 100%;
   text-decoration: none;
   color: #000000;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border-radius: 15px;
   padding: 26px 26px 0px 26px;
   height: 100%;
@@ -1538,7 +1538,7 @@ h6 a {
 }
 
 .blog-page {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding: 30px 30px;
   border-radius: 15px;
   max-width: 1050px;
@@ -1601,6 +1601,115 @@ h6 a {
   .blog-page .blog-text p {
     font-size: 15px;
   }
+}
+
+/*--------------------------------------------------------------
+# forms-place
+--------------------------------------------------------------*/
+.form-place {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-place h1 {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+@media only screen and (max-width: 767px) {
+  .form-place h1 {
+    font-size: 30px;
+    margin-bottom: 27px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .form-place h1 {
+    font-size: 28px;
+    margin-bottom: 23px;
+  }
+}
+
+.form-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #F3F3F3;
+  color: #000000;
+  padding: 17px 25px;
+  border-radius: 14px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.form-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+.form-link p {
+  font-family: "SF Pro Rounded Semibold";
+  font-size: 16px;
+  color: #000000;
+}
+.form-link .chev-right {
+  height: 18px;
+}
+.form-link:hover {
+  background-color: #dbdbdb;
+}
+
+/*--------------------------------------------------------------
+# form-single-box
+--------------------------------------------------------------*/
+.form-single-box {
+  background-color: #F3F3F3;
+  padding: 25px 25px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .form-single-box {
+    padding: 20px 20px;
+  }
+}
+.form-single-box h2 {
+  text-align: center;
+  font-family: "SF Pro Rounded Semibold";
+  color: #000000;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .form-single-box h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.form-single-box input::-webkit-input-placeholder, .form-single-box textarea::-webkit-input-placeholder {
+  color: #A5A5A5;
+}
+.form-single-box input::-moz-placeholder, .form-single-box textarea::-moz-placeholder {
+  color: #A5A5A5;
+}
+.form-single-box input:-ms-input-placeholder, .form-single-box textarea:-ms-input-placeholder {
+  color: #A5A5A5;
+}
+.form-single-box input::-ms-input-placeholder, .form-single-box textarea::-ms-input-placeholder {
+  color: #A5A5A5;
+}
+.form-single-box input::placeholder, .form-single-box textarea::placeholder {
+  color: #A5A5A5;
+}
+.form-single-box .form-control {
+  text-align: center;
+  padding: 11px 12px;
+  border-radius: 50px;
+  border: 0;
 }
 
 /*--------------------------------------------------------------
