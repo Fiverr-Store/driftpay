@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+
+.footer{
+  padding-bottom: 40px;
+
+ .downloand-btn{
+  padding-top: 26px;
+  @media only screen and (max-width: 991px) {
+   text-align: center;
+   padding-top: 24px;
+   padding-bottom: 22px;
+  }
+  a{
+    &:not(:last-child) {
+    margin-right: 14px;
+    }
+    text-decoration: none;
+    display: inline-block;
+    img{
+      height: 40px;
+      @media only screen and (max-width: 991px) {
+       height: 38px;
+      }
+      @media only screen and (max-width: 767px) {
+       height: 36px;
+      }
+    }
+    transition: all .2s ease-in;
+    &:hover{
+      transform: translateY(-3px);
+    }
+  }
+ }
+
+.footer-text{
+  color: $bg-black;
+  @media only screen and (max-width: 991px) {
+   text-align: end;
+  }
+  p{
+    color: $bg-black;
+    font-size: 15px;
+  }
+}
+
+}
